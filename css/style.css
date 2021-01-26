@@ -4,13 +4,13 @@ body{
     font-family: sans-serif;
 }
 nav{
-    background: rgba(5, 5, 5, 0.8);
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
     height: 70vh;
     display: flex;
     justify-content: space-between;
 }
 .text h4{
-    color: rgb(187, 6, 6);
+    color: rgb(187, 169, 6);
     font-size: 30px;
     margin-left: 200px;
     margin-top: 20%;
@@ -21,7 +21,7 @@ nav{
     margin-left: 300px;
 }
 .text p{
-    color: yellow;
+    color: rgb(5, 146, 99);
     margin-left: 250px;
     font-family: Coda Caption;
 }
@@ -42,8 +42,7 @@ a{
 .card2 a,
 .card3 a{
     display: block;
-    background: rgb(3, 124, 172);
-    color: whitesmoke;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);    color: whitesmoke;
     width: 40vh;
     height: 5vh;
     display: flex;
@@ -61,8 +60,8 @@ a{
     height: 20vh;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    color: teal;
-    background: rgb(129, 27, 27);
+    color: rgb(230, 247, 1);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     outline: none;
     cursor: pointer;
     border: none;
@@ -71,7 +70,7 @@ a{
 .card1 button:hover,
 .card2 button:hover,
 .card3 button:hover{
-    background: rgb(161, 75, 4);
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
     color: whitesmoke;
 }
 .card3{
