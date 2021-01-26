@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    background: rgba(5, 5, 5, 0.8);
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.text h4{
+    color: rgb(187, 6, 6);
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 20%;
+}
+.text h1{
+    color: whitesmoke;
+    font-size: 50px;
+    margin-left: 300px;
+}
+.text p{
+    color: yellow;
+    margin-left: 250px;
+    font-family: Coda Caption;
+}
+.myPicInNav{
+    height: 40vh;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    margin-left: 100px;
+}
+a{
+    text-decoration: none;
+}
+.card1 a,
+.card2 a,
+.card3 a{
+    display: block;
+    background: rgb(3, 124, 172);
+    color: whitesmoke;
+    width: 40vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -40px;
+    font-size: 20px;
+}
+.card1 button,
+.card2 button,
+.card3 button{
+    width: 40vh;
+    height: 20vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: teal;
+    background: rgb(129, 27, 27);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+.card1 button:hover,
+.card2 button:hover,
+.card3 button:hover{
+    background: rgb(161, 75, 4);
+    color: whitesmoke;
+}
+.card3{
+    margin-right: 100px;
+}
+.Hire{
+    margin-left: 300px;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    background: rgb(161, 5, 5);
+    color: whitesmoke;
+    cursor: pointer;   
+}
+.Hire:hover{
+    background: rgba(0,0,0,0.2);
+}
