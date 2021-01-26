@@ -38,10 +38,9 @@ nav{
 a{
     text-decoration: none;
 }
-.card1 a,
-.card2 a,
-.card3 a{
-    display: block;
+.card1 p,
+.card2 p,
+.card3 p{
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);    color: whitesmoke;
     width: 40vh;
     height: 5vh;
@@ -50,22 +49,32 @@ a{
     align-items: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-top: -40px;
     font-size: 20px;
+}
+.card1,
+.card2,
+.card3{
+    margin-top: -40px;
 }
 .card1 button,
 .card2 button,
 .card3 button{
     width: 40vh;
     height: 20vh;
+    margin-top: -20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: rgb(230, 247, 1);
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
-    outline: none;
     cursor: pointer;
-    border: none;
     font-size: 20px;
+    border: none;
+    outline: none;
+}
+button a{
+    list-style: none;
+    color: aliceblue;
+
 }
 .card1 button:hover,
 .card2 button:hover,
@@ -89,4 +98,112 @@ a{
 }
 .Hire:hover{
     background: rgba(0,0,0,0.2);
+}
+.aboutMe h3,
+.contact h3,
+.skill h3,
+.education h3{
+    text-align: center;
+}
+
+.subtititle{
+    display: flex;
+    justify-content: center;
+}
+.subtititle .text{
+    margin-top: -15px;
+    font-weight: bold;
+}
+.ruler{
+    width: 10vh;
+    height: 0.5vh;
+    background: rgb(209, 5, 5);
+    margin-top: -5px;
+}
+.aboutMeContent{
+    display: grid;
+    grid-template-columns: 2.5fr 5fr;
+    grid-template-areas: "leftSide rightSide";
+}
+.leftSide{
+    grid-area: 'leftside';
+    margin-left: 100px;
+}
+.rightSide{
+    grid-area: 'rightside';
+    margin-right: 100px;
+    text-indent: 50px;
+}
+.rightSide button{
+    width: 20vh;
+    height: 5vh;
+    background: rgb(170, 0, 0);
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 20px;
+    float: right;
+}
+footer{
+    background: #000;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    color: aliceblue;
+}
+footer p span{
+    color: brown;
+}
+.edu,
+.skillDetail{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas: 'left right';
+}
+.left{
+    grid-area: 'left';
+    margin-left: 100px;
+    text-indent: 50px;
+}
+.right{
+    grid-area: 'right';
+    margin-right: 100px;
+}
+.getInTouch{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr;
+    grid-template-areas: 'left right';
+}
+form input{
+    width: 100%;
+    display: inline-block;
+    margin: 5px;
+    height: 5vh;
+}
+#textare{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#submit{
+    padding: 5px;
+    width: 40vh;
+    background: rgb(185, 1, 1);
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.app{
+    display: flex;
+    background: rgba(94, 93, 93,0.2);
+    padding: 5px;
+    border-radius: 20px;
+    width: 50%;
+    justify-content: space-between;
+}
+.app .icon{
+    width: 2vh;
+    height: 2vh;
 }
