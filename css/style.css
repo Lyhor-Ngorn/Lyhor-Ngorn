@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: rgba(0,0,0,0.2);
 }
 p{
     text-align: justify;
@@ -10,6 +11,7 @@ nav{
     background: url("https://images.pexels.com/photos/943903/pexels-photo-943903.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     height: 70vh;
     background-size: cover;
+    width: 100%;
 }
 .text h4{
     color: rgb(187, 169, 6);
@@ -18,10 +20,9 @@ nav{
     margin-top: 20%;
 }
 
-.text h1{
-    color: whitesmoke;
-    font-size: 50px;
+.animation{
     margin-left: 300px;
+
 }
 .text p{
     color: rgb(5, 146, 99);
@@ -74,7 +75,7 @@ a{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: rgb(230, 247, 1);
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
     cursor: pointer;
     font-size: 20px;
     border: none;
@@ -88,7 +89,7 @@ button a{
 .card1 button:hover,
 .card2 button:hover,
 .card3 button:hover{
-    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
     color: whitesmoke;
 }
 .card3{
@@ -139,12 +140,18 @@ button a{
     margin-left: 100px;
     width: 40vh;
     height: 40vh;
-    margin-top: -15vh;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+
 }
 .rightSide{
     grid-area: 'rightside';
     margin-right: 100px;
     text-indent: 50px;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px #000000;
 }
 .rightSide button{
     width: 20vh;
@@ -184,6 +191,7 @@ footer p span{
     margin-right: 100px;
     margin-left: 30px;
     float: right;
+    
 }
 .getInTouch{
     display: grid;
@@ -219,13 +227,46 @@ form input{
     position: sticky;
     bottom: 0;
     display: flex;
+
 }
 .app .icon{
     width: 4vh;
     height: 4vh;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 6px #000000;
 }
-#map{
-    width: 20vh;
-    height: 10vh;
-    margin-left: 5vh;
+
+.left p{
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px #000000;
 }
+.right img{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 10px #888888;
+}
+/*testing*/
+.animation h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.1px solid rgb(252, 252, 252); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    width: 12ch;
+    font-size: 50px;
+    color: lavender;
+    animation: 
+    type 3s steps(12);
+    animation-iteration-count: infinite;
+  }
+  /* The typing effect */
+  @keyframes type {
+      0%{
+          width: 0ch;
+      }
+      100%{
+          width: 12ch;
+      }
+  }
+  
