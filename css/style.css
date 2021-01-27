@@ -3,11 +3,13 @@ body{
     padding: 0;
     font-family: sans-serif;
 }
+p{
+    text-align: justify;
+}
 nav{
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    background: url("https://images.pexels.com/photos/943903/pexels-photo-943903.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     height: 70vh;
-    display: flex;
-    justify-content: space-between;
+    background-size: cover;
 }
 .text h4{
     color: rgb(187, 169, 6);
@@ -15,6 +17,7 @@ nav{
     margin-left: 200px;
     margin-top: 20%;
 }
+
 .text h1{
     color: whitesmoke;
     font-size: 50px;
@@ -25,8 +28,14 @@ nav{
     margin-left: 250px;
     font-family: Coda Caption;
 }
+.coverBg{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.6);
+}
 .myPicInNav{
-    height: 40vh;
+    height: 70vh;
+    width: 30%;
 }
 .grid{
     display: flex;
@@ -125,9 +134,12 @@ button a{
     grid-template-columns: 2.5fr 5fr;
     grid-template-areas: "leftSide rightSide";
 }
-.leftSide{
+.leftSide img{
     grid-area: 'leftside';
     margin-left: 100px;
+    width: 40vh;
+    height: 40vh;
+    margin-top: -15vh;
 }
 .rightSide{
     grid-area: 'rightside';
@@ -165,15 +177,20 @@ footer p span{
     grid-area: 'left';
     margin-left: 100px;
     text-indent: 50px;
+    float: left;
 }
 .right{
     grid-area: 'right';
     margin-right: 100px;
+    margin-left: 30px;
+    float: right;
 }
 .getInTouch{
     display: grid;
-    grid-template-columns: 2.5fr 2.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 'left right';
+    padding: 20px;
+    margin: 30px;
 }
 form input{
     width: 100%;
@@ -196,14 +213,19 @@ form input{
     margin-top: 5px;
 }
 .app{
-    display: flex;
-    background: rgba(94, 93, 93,0.2);
     padding: 5px;
     border-radius: 20px;
     width: 50%;
-    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    display: flex;
 }
 .app .icon{
-    width: 2vh;
-    height: 2vh;
+    width: 4vh;
+    height: 4vh;
+}
+#map{
+    width: 20vh;
+    height: 10vh;
+    margin-left: 5vh;
 }
