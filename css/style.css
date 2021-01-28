@@ -217,9 +217,8 @@ footer p span{
 }
 .left{
     grid-area: 'left';
-    margin-left: 100px;
     text-indent: 50px;
-    float: left;
+    margin-left: 30px;
 }
 .right{
     grid-area: 'right';
@@ -244,6 +243,7 @@ form input{
 #textare{
     margin-left: 5px;
     margin-top: 5px;
+    width: 100%;
 }
 #submit{
     padding: 5px;
@@ -306,17 +306,50 @@ textarea{
     outline: none;
     background: rgba(136, 179, 179,0.4);
     color: beige;
+    width: 100%;
 }
 iframe{
     width: 100%;
     height: 30vh;
     float: right;
 }
-@media screen and (max-width: 600px){
-    .coverBg .text h4,.coverBg .text p,.coverBg .text .animation h1{
-        float: left;
+.googlemap{
+    display: none;
+}
+@media screen and (max-width: 1100px) and (min-width:900px){
+    .text h4,
+    .text p{
+        margin-left: 50%;
     }
-    nav img{
+    .animation h1{
+        margin-left: 0;
+    }
+    .coverBg button{
+        width: 30vh;
+        margin-left: 55%
+    }
+    .coverBg img{
         display: none;
+    }
+    input{
+        width: 100%;
+    }
+    .googlemap{
+        display: block;
+    }
+    iframe{
+        display: none;
+    }
+    .app .icon{
+        width: 4vh;
+        height: 4vh;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 6px #180202;
+        display: inline-block;
+    }
+    .edu .right img{
+        height: 80vh;
+        width: 40vh;
     }
 }
