@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url('https://images.pexels.com/photos/983200/pexels-photo-983200.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-image: url('https://cdn.suwalls.com/wallpapers/3d/statue-out-of-glass-shards-26515-1920x1080.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +24,7 @@ h4{
     color: blanchedalmond;
 }
 nav{
-    background: url('https://cdn.guidingtech.com/imager/assets/2020/01/251218/Best-Rick-and-Morty-wallpapers-for-desktop-4k-3_4d470f76dc99e18ad75087b1b8410ea9.jpg?1578464147');
+    background: url('https://cdn.wallpapersafari.com/98/58/JI9tWi.jpg');
     height: 70vh;
     background-size: cover;
     width: 100%;
@@ -104,6 +104,13 @@ a{
     border: none;
     outline: none;
     border-bottom: cornsilk solid 2px;
+}
+.goUp{
+    float: right;
+    width: 7vh;
+    height: 7vh;
+    position: sticky;
+    bottom: 0;
 }
 button a{
     list-style: none;
@@ -249,7 +256,6 @@ form input{
     margin-top: 5px;
 }
 .app{
-    padding: 5px;
     border-radius: 20px;
     width: 50%;
     position: sticky;
@@ -258,8 +264,8 @@ form input{
 
 }
 .app .icon{
-    width: 4vh;
-    height: 4vh;
+    width: 6vh;
+    height: 6vh;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 2px 6px #180202;
@@ -291,4 +297,13 @@ input[type=submit]{
 
 .animation h1{
     --animation-duration: 5s;
+}
+input[type=text],
+#email,
+textarea{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgba(136, 179, 179,0.4);
+    color: beige;
 }
