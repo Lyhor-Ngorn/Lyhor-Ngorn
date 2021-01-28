@@ -1,11 +1,24 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background: rgba(0,0,0,0.2);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.education{
+    background: rgba(211, 210, 210,0.4);
+    padding: 70px;
 }
 p{
     text-align: justify;
+    color: rgb(248, 248, 248);
+}
+.aboutMe{
+    padding: 70px;
 }
 nav{
     background: url("https://images.pexels.com/photos/943903/pexels-photo-943903.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
@@ -23,6 +36,11 @@ nav{
 .animation{
     margin-left: 300px;
 
+}
+.contact{
+    background:  rgba(211, 210, 210,0.4);
+    padding: 70px;
+    margin-top: 20vh;
 }
 .text p{
     color: rgb(5, 146, 99);
@@ -114,6 +132,7 @@ button a{
 .skill h3,
 .education h3{
     text-align: center;
+    color: blanchedalmond;
 }
 
 .subtititle{
@@ -123,6 +142,10 @@ button a{
 .subtititle .text{
     margin-top: -15px;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.edu .left p{
+    margin-top: -10px;
 }
 .ruler{
     width: 10vh;
@@ -250,23 +273,13 @@ form input{
 }
 /*testing*/
 .animation h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.1px solid rgb(252, 252, 252); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+ /* Keeps the content on a single line */
     width: 12ch;
     font-size: 50px;
     color: lavender;
-    animation: 
-    type 3s steps(12);
-    animation-iteration-count: infinite;
+
   }
   /* The typing effect */
-  @keyframes type {
-      0%{
-          width: 0ch;
-      }
-      100%{
-          width: 12ch;
-      }
-  }
-  
+input[type=submit]{
+    color: white;
+}
