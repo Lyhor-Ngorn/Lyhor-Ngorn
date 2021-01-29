@@ -38,7 +38,7 @@ nav{
     margin-top: 20%;
 }
 
-.animation{
+.animation h1{
     margin-left: 300px;
 
 }
@@ -285,7 +285,6 @@ form input{
 /*testing*/
 .animation h1 {
  /* Keeps the content on a single line */
-    width: 12ch;
     font-size: 50px;
     color: rgb(255, 251, 0);
 
@@ -295,9 +294,6 @@ input[type=submit]{
     color: white;
 }
 
-.animation h1{
-    --animation-duration: 5s;
-}
 input[type=text],
 #email,
 textarea{
@@ -317,12 +313,12 @@ iframe{
     display: none;
 }
 @media screen and (max-width: 1100px) and (min-width:900px){
-    .text h4,
-    .text p{
-        margin-left: 50%;
+    .coverBg .text p,
+    .coverBg .text h4{
+        text-align: center;
     }
     .animation h1{
-        margin-left: 0;
+        margin-left: 50%;
     }
     .coverBg button{
         width: 30vh;
@@ -351,5 +347,99 @@ iframe{
     .edu .right img{
         height: 80vh;
         width: 40vh;
+    }
+}
+@media screen and (min-width:600px) and (max-width:899px){
+    *{
+        box-sizing: border-box;
+    }
+    .coverBg .text p{
+        margin-left: 0;
+    }
+    .coverBg .text h4{
+        margin-left: 0;
+    }
+    .animation h1{
+        margin-left: 0;
+    }
+    .coverBg button{
+        width: 30vh;
+        margin-left: 0;
+    }
+    .coverBg img{
+        display: block;
+    }
+    .grid .card1,
+    .grid .card2,
+    .grid .card3{
+        display: none;
+    }
+    .edu,
+    .skillDetail{
+        display: flex;
+    }
+    .aboutMeContent{
+        display: inline-block;
+    }
+    .edu img,
+    .skillDetail img,
+    .aboutMeContent img{
+        display: none;
+    }
+    .getInTouch{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:599px) and (min-width:0{
+    *{
+        box-sizing: border-box;
+    }
+    .coverBg .text p,
+    .coverBg .text h4{
+        margin-left: 0;
+    }
+    .animation h1{
+        margin-left: 0;
+    }
+    .grid{
+        display: none;
+    }
+    .coverBg img{
+        display: none;
+    }
+    .aboutMeContent{
+        display: block;
+    }
+    .aboutMeContent p{
+        margin-left: 25%;
+    }
+    .edu img,
+    .skillDetail img{
+        display: none;
+    }
+    .edu p,
+    .skillDetail p{
+        width: 100%;
+    }
+    .googlemap{
+        display: block;
+    }
+    iframe{
+        display: none;
+    }
+    .getInTouch{
+        display: inline-block;
+        width: 100%;
+    }
+    .getInTouch .left{
+        margin-left: 0;
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    .coverBg .text button{
+        margin-left: 25%;
     }
 }
